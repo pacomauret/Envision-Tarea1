@@ -1,10 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
-
-
 @Injectable({ providedIn: 'root' })
 export class PeliculasService {
 
@@ -17,7 +13,6 @@ export class PeliculasService {
   constructor(
     private http: HttpClient) { }
 
-  /** GET heroes from the server */
   getPeliculas() {
     return this.http.get(this.link) 
       
