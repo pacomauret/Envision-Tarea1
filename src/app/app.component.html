@@ -65,6 +65,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Titulo</th>
+                        <th scope="col">Director(es)</th>
                         <th scope="col">Año</th>
                         <th scope="col">Rating</th>
                         <th scope="col">Metascore</th>
@@ -74,6 +75,7 @@
                     <tr *ngFor="let pelicula of peliculas| ordenar:'desc':'rating'; let i=index">
                         <th scope="row">{{i+1}}</th>
                         <td>{{pelicula.title}}</td>
+                        <td>{{pelicula.director}}</td>
                         <td>{{pelicula.year}}</td>
                         <td>{{pelicula.rating}}</td>
                         <td>{{pelicula.metascore}}</td>
